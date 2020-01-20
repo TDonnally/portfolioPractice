@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>portfolio</title>
+        <link rel="stylesheet" type="text/css" href="portfolio.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id = title>
+            <img id="logo" src="LOGO.png"/>
+            <h3 id = "name">TD Landing</h3>
+        </div>
+    <div id = "wrapper">
+        <div id = "overlay">
+        <div class = "frame">
+            <canvas class = 'canvas' id = "paintBrush" width="1080" height="960">
+
+            </canvas>
+            <p class = "labels">portfolio</p>
+        </div>
+        <div class = "frame">
+            <canvas class = 'canvas' id = "about" width="1080" height="960">
+
+            </canvas>
+            <p class="labels">about</p>
+        </div>
+        <div class = "frame">
+            <canvas class = 'canvas' id = "contact">
+
+            </canvas>
+            <p class ="labels">contact me</p>
+        </div>
+        </div>
+        <div id = "content">
+            <div class = "contentBox">
+                <div class = "thumbnail">
+                    <img src = "space.png"/>
+                    <a href="https://tdonnally.github.io/Wormhole/Space/space.html">
+                        <h4>Space Travel</h4>
+                    </a>
+                    <p>A psuedo-3D space visual using the ZDog library</p>
+                    <h5>Skills</h5>
+                    <ul>
+                        <li>Javascript</li>
+                        <li>CSS</li>
+                        <li>HTML5</li>
+                        <li>OOP</li>
+                    </ul>
+                </div>
+                <div class = "thumbnail">
+                    <img src = "Radio.png"/>
+                    <a href="https://tdonnally.github.io/Radio/Radio/radio.html">
+                        <h4>Radio</h4>
+                    </a>
+                    <p>A draggable psuedo-3D radio made with ZDog</p>
+                    <h5>Skills</h5>
+                    <ul>
+                        <li>Javascript</li>
+                        <li>CSS</li>
+                        <li>HTML5</li>
+                    </ul>
+                </div>
+                <div class = "thumbnail">
+                    <img src = "RPS.png"/>
+                    <a href="https://tdonnally.github.io/RPS/RPS/RPS.html">
+                        <h4>RPS</h4>
+                    </a>
+                    <p>Rock, Paper, Scissors game made from scratch</p>
+                    <h5>Skills</h5>
+                    <ul>
+                        <li>Javascript</li>
+                        <li>CSS</li>
+                        <li>HTML</li>
+                    </ul>
+                </div>
+            </div>
+            <div class = "contentBox">
+                <img id = "me" src = "myFace.jpg"/>
+                <h2>About Me</h2>
+                <span>
+                    Tristan is a freelance web developer
+                    that specializes in front end development.
+                    His biggest strengths are Javascript and CSS and 
+                    he has experience in PHP and SQL as well.
+                </span>
+                <br>
+                <span>
+                    Feel free to check out my portfolio and contact me with any requests.
+                    Here is a link to my <a href="https://github.com/TDonnally">Github</a>.
+                </span>
+            </div>
+            <div class = "contentBox">
+                <h2>Contact Me:</h2>
+                <form action="mailto:tristandonnally@gmail.com" method="post" enctype="text/plain">
+                    Email: 
+                    <br><input class = "info" type = text/>
+                    <br>
+                    Phone Number:
+                    <br><input class = "info" type = text/>
+                    <br>
+                    Message: 
+                    <br></bn><textarea rows="10" cols="50"></textarea>
+                    <br>
+                    <button type = submit value="Send">Submit</button>
+                    
+                </form>
+
+            </div>
+        </div>
+    </div>
+        <script src="https://unpkg.com/zdog@1/dist/zdog.dist.min.js"></script>
+        <script src="portfolio.js"></script>
+    </body>
+</html>
